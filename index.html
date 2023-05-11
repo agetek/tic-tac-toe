@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>tic-tac-toe</title>
 </head>
-<body>
-    <script src="script.js"></script>
+
+<body onload="start()">
+        <div id="player" class="player"></div>
+        <canvas id="mycanvas" width="316" height="326" class="mycanvas"></canvas>
+        <div id="board" class="board"></div>
+        <div id="result" class="result"></div>
+        <div id="again" class="again" onclick="startAgain()">Nochmal!</div>
 </body>
+
 </html>

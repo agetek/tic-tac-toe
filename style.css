@@ -1,0 +1,99 @@
+/* Die Hintergrundfarbe der Seite auf #323232 setzen */
+body {
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Die Schriftart Open Sans verwenden */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Die Tabelle weiße Rahmen mit der Stärke 5px geben */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-indent: 0;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+tr:not(:first-child):not(:last-child) td {
+  border-top: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+}
+
+td:not(:first-child):not(:last-child) {
+  border-left: 5px solid #ccc;
+  border-right: 5px solid #ccc;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.board {
+  display: flex;
+  position: relative;
+  top: -300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  display: flex;
+  position: relative;
+  top: 0;
+  justify-self:center;
+  align-items: center;
+  color:#ccc;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.result {
+  display: flex;
+  position: relative;
+  top: -300px;
+  justify-content: center;
+  align-items: center;
+  color:#ccc;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.mycanvas {
+  visibility: hidden;
+  position: relative;
+  top: 27px;
+  z-index: 1;
+}
+
+.again {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: -280px;
+  justify-self:center;
+  align-items: center;
+  color:#ccc;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+.again:hover {
+  color:#fff;
+}
